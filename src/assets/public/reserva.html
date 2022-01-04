@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>RESIDENCIA UNIVERSITARIA</title>
+<link href="reserva.css" rel="stylesheet" />
+</head>
+<body>
+    
+<div class="container">
+<form  method="POST" action="/reserva"  class="ingreso" id="ingreso">
+    <a href="javascript:history.back()"><img src="images/back"  width="50px" alt="Botón" ></a>
+    <p class="titulo">
+     Ingreso de datos para Reservar.
+   </p>
+
+<h2 class="titulos">Reservación</h2>
+<div class="ingreso_input nombre">
+<label for="nombre">Ingrese su nombre:</label>
+<input type="text" id="nombre" name="name" placeholder="&#128113; Ingrese nombre"
+minlength="5" maxlength="40" required>
+<p class="error"></p>
+</div>
+<div class="ingreso_input apellido">
+    <label for="apellido">Ingrese su apellido:</label>
+    <input type="text" id="apellido" name="lastname" placeholder="&#x1f9d1; Ingrese apellidos"
+    minlength="5" maxlength="40" required>
+    <p class="error"></p>
+    </div>
+<div class="ingreso_input cedula">
+<label for="cedula">Ingrese su cédula:</label>
+<input type="integer" id="cedula" name="dni" placeholder="Ingrese cédula sin guión" maxlength="10" required>
+<p class="error"></p>
+</div>
+<div class="ingreso_input habitacion">
+<label for="habitacion">Tipo de habitación:
+    <input type="text" id="habitacion" name="room" placeholder="&#x1f6cc; Ingrese tipo de habitación">
+    <p class="error"></p>
+</label>
+<p class="error"></p>
+</div>
+
+<div >
+    <center>
+      <input type="submit" id="Send" value="Genere su reserva" >
+    </center>
+</div>
+
+<p class="mensajeafirmativo"></p>
+</form>
+</div>
+<script src="reserva.js"></script>
+</body>
+</html>
