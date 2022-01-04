@@ -1,0 +1,47 @@
+<body>
+    
+    <div class="container">
+    <form method="POST" action="/alquiler" class="ingreso" id="ingreso">
+    <p class="titulo">
+    Ingreso de datos para Contrato.
+    </p>
+    <h2 class="titulos">Arrendador/a</h2>
+    <div class="ingreso_input nombre">
+    <label for="nombre">Ingrese su nombre:</label>
+    <input type="text" id="nombre" name="name" placeholder="&#128113; Ingrese nombre"
+    minlength="5" maxlength="40" required>
+    <p class="error"></p>
+    </div>
+    <div class="ingreso_input apellido">
+        <label for="apellido">Ingrese su apellido:</label>
+        <input type="text" id="apellido" name="lastname" placeholder="&#x1f9d1; Ingrese apellidos"
+        minlength="5" maxlength="40" required>
+        <p class="error"></p>
+        </div>
+    <div class="ingreso_input cedula">
+    <label for="cedula">Ingrese su cédula:</label>
+    <input type="integer" id="cedula" name="dni" placeholder="Ingrese cédula sin guión" maxlength="10" required>
+    <p class="error"></p>
+    </div>
+    <div class="ingreso_input habitacion">
+    <label for="habitacion">Tipo de habitación:
+        <input type="text" id="habitacion" name="room" placeholder="&#x1f6cc; Ingrese tipo de habitación">
+        <p class="error"></p>
+    </label>
+    <p class="error"></p>
+    </div>
+    <div class="ingreso_input monto">
+        <label for="monto">Monto a pagar mensualmente:</label>
+        <input type="double" id="monto" name="cost" placeholder="&#x1f6cc; Ingrese monto">
+        <p class="error"></p>
+        <a class="fondo-textob" href="/pago" routerLink="/pago">Realice el pago</a>
+        </div>   
+    <div >
+      <input type="submit" id="Send" value="Genere su contrato" >
+    </div>
+    
+    <p class="mensajeafirmativo"></p>
+    </form>
+    </div>
+    <script src="alquiler.js"></script>
+    </body>
